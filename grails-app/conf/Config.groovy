@@ -88,4 +88,23 @@ log4j = {
            'org.springframework',
            'org.hibernate',
            'net.sf.ehcache.hibernate'
+
+    info    'grails.app.controllers.com.nixilla',
+            'grails.app.domain.com.nixilla',
+            'grails.app.services.com.nixilla',
+            'grails.app.taglib.com.nixilla',
+            'grails.app.conf.com.nixilla',
+            'grails.app.filters.com.nixilla'
+
+    root {
+        error()
+    }
+
+    environments {
+        development {
+            root {
+                info()
+            }
+        }
+    }
 }
